@@ -1,0 +1,41 @@
+.toast {
+  position: fixed;
+
+  box-shadow: 0 0 4px 4px #bab6ca2a;
+  background-color: #fffdfd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 8px;
+  left: 50%;
+  animation: fadein 0.4s ease-out forwards;
+  color: #0a0230;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.exit {
+  animation-name: fadeout;
+  animation-fill-mode: both;
+  animation-duration: 0.4s;
+}
+@keyframes fadein {
+  0% {
+    top: 0;
+    transform: translate(-50%, -100%);
+  }
+  100% {
+    top: 16px;
+    transform: translateX(-50%);
+  }
+}
+@keyframes fadeout {
+  0% {
+    top: 16px;
+    transform: translateX(-50%);
+  }
+  100% {
+    top: 0;
+    transform: translate(-50%, -100%);
+  }
+}

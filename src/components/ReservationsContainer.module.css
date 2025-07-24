@@ -1,0 +1,15 @@
+.res {
+    min-height: 80vh;
+    background-color: black;
+    display: flex;
+    gap: 32px;
+    padding: 64px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@media (max-width:450px) {
+    .res {
+        padding: 0;
+    }
+}

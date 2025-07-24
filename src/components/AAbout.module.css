@@ -1,0 +1,99 @@
+.text {
+  background-color: #000;
+  padding: 90px;
+}
+.info {
+  background-color: #000;
+  padding: 90px;
+}
+.infoTwo {
+  background-color: #fff;
+  *:not(h3) {
+    color: #000 !important;
+  }
+  padding: 90px;
+}
+.container {
+  display: flex;
+  min-height: 80vh;
+  flex-wrap: wrap;
+  gap: 32px;
+
+  * {
+    flex: 1;
+  }
+}
+.img {
+  position: relative;
+}
+
+.textTwo {
+  line-height: 1.4;
+  text-align: left;
+  *:not(p) {
+    font-family: "Cormorant Garamond", serif !important;
+    font-size: 25px !important;
+    font-weight: 500;
+  }
+}
+.imgOne {
+  content: "";
+  position: absolute;
+  max-width: 400px;
+  min-width: 250px;
+  width: 100%;
+  height: 500px;
+  background: url(../assets/img-1.jpg);
+  left: -90px;
+  top: 90px;
+  background-size: cover;
+  background-position: center;
+}
+.imgTwo {
+  content: "";
+  position: absolute;
+  max-width: 350px;
+  min-width: 250px;
+  width: 100%;
+  height: 450px;
+  background: url(../assets/chef-salts-raw-salmon-steak-in-a-frying-pan-healt-2021-12-09.jpg);
+  left: 150px;
+  top: 0;
+  background-size: cover;
+  background-position: center;
+}
+.imgThree {
+  background-size: cover;
+  background-position: center;
+  max-width: 350px;
+  min-width: 250px;
+  height: 450px;
+  background-image: url(../assets/marinated-turkey-steak-with-spices-on-a-wooden-boa-2022-04-22-13-31-31-utc.jpg);
+}
+@media (max-width: 1100px) {
+  .img,
+  .imgOne,
+  .imgTwo {
+    position: static;
+  }
+  .imgOne,
+  .imgTwo {
+    width: 100% !important;
+    display: block;
+    margin: 8px 0;
+    max-width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .text,
+  .textTwo,
+  .info,
+  .infoTwo {
+    padding: 16px;
+  }
+  .img,
+  .imgOne,
+  .imgTwo {
+    position: static;
+  }
+}

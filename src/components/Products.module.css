@@ -1,0 +1,23 @@
+.product {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+  padding: 16px;
+}
+.more {
+  border-radius: 8px;
+  box-shadow: 0 0 5px 5px #eeeeee;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px 0;
+  align-items: flex-center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 32px;
+  height: 230px;
+  aspect-ratio: 1 / 1;
+  margin: auto;
+  border-radius: 50%;
+  border: 5px solid #264653;
+}

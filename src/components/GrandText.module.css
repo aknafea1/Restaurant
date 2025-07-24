@@ -1,0 +1,9 @@
+.heading {
+  color: #fff;
+  font-size: min(120px, 8vw);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+.heading.small {
+  font-size: min(60px, 8vw);
+}

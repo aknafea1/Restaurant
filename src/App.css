@@ -1,0 +1,23 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+li {
+  font-weight: 400;
+  margin: 8px;
+}
+b {
+  font-weight: 1000;
+}
+  *:not(i) {
+    font-family: "Inter", sans-serif;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h6 {
+    font-family: "Cormorant Garamond", serif;
+  }

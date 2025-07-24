@@ -1,0 +1,36 @@
+.heading {
+  padding: 90px 180px 90px 90px;
+  font-weight: 400;
+  h3 {
+    color: var(--main-color);
+    font-family: "inter";
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 14px;
+
+    margin: 16px 0;
+  }
+  h2 {
+    font-size: min(10vw, 60px);
+    color: #fefefe;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  span {
+    font-family: "Cormorant Garamond", serif;
+    margin-left: 128px;
+  }
+  p {
+    text-align: left;
+    max-width: 400px;
+    margin-left: auto;
+  }
+}
+@media (max-width: 600px) {
+  .heading {
+    padding: 8px;
+  }
+  .heading span {
+    margin: 0;
+  }
+}

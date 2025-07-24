@@ -1,0 +1,85 @@
+.table {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 90px 16px;
+  text-align: left;
+  flex-wrap: wrap;
+  justify-content: center;
+  li {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 5px;
+  }
+  span {
+    color: var(--main-color);
+  }
+  h2 {
+    text-align: center;
+    border-top: 3px solid var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+    text-transform: uppercase;
+    color: var(--main-color);
+    font-size: 25px;
+  }
+  * {
+    color: #fff;
+  }
+
+  p {
+    opacity: 0.7;
+    font-size: 12px;
+  }
+  ul {
+    list-style: none;
+    flex: 1;
+    padding: 0 !important;
+  }
+}
+.tableItem {
+  max-width: 30%;
+  min-width: 250px;
+  margin: auto;
+}
+.chef,
+.original {
+  position: relative;
+  margin: 48px 0;
+}
+.chef::before,
+.original::before {
+  content: "";
+  position: absolute;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  border: 2px solid var(--main-color);
+  left: 52%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.chef::after,
+.original::after {
+  content: "Chef Recommend";
+  position: absolute;
+  top: 0;
+  left: 52%;
+  transform: translate(-50%, -100%);
+  background-color: var(--main-color);
+  color: white;
+  padding: 6px 12px;
+  font-size: 12px;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.original::after {
+  content: "Original Taste";
+}
+@media (max-width: 400px) {
+  .table {
+    padding: 16px;
+  }
+}

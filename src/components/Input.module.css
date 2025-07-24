@@ -1,0 +1,33 @@
+.input {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  position: relative;
+  padding: 0;
+  height: 56px;
+  border-radius: 3px;
+  border: 1px solid #000b45;
+  input {
+    border: 0;
+    transform: translateY(-12px);
+    outline: 0;
+    width: 100%;
+    height: calc(56px - 24px / 2);
+    background-color: transparent;
+    padding-left: 16px;
+    font-size: 18px;
+  }
+
+  legend {
+    margin-left: 16px;
+    color: #4e83bd;
+    text-transform: capitalize;
+  }
+  i {
+    position: absolute;
+    left: -30px;
+    top: -10px;
+    color: #40699669;
+  }
+}
+
