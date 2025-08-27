@@ -2,7 +2,7 @@ import React from "react";
 import { table,tableItem,chef,original } from "./Table.module.css";
 
 const Table = ({ fetchedData,style }) => {
-  console.log(fetchedData);
+
   return (
     <div className={table} style={{...style}}>
       {fetchedData.menu.map((cat, idx) => {
