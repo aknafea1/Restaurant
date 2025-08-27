@@ -25,7 +25,7 @@ function App() {
       (async () => {
          await new Promise((r) => setTimeout(r, Math.random() * 3000 + 600)); //Making sure U See Loading 😂
         const res = await fetch(
-          "https://cdn.jsdelivr.net/gh/aknafea1/api@main/Menu.json"
+          "https://cdn.jsdelivr.net/gh/aknafeado/RestaurantApi@main/Menu.json"
         );
         const data = await res.json();
         setApiData(data);
